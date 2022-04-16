@@ -1,4 +1,3 @@
-// create new todo item
 const addForm = document.querySelector('.add');
 const newTodo = document.querySelector('.add input');
 const todoList = document.querySelector('ul.todos');
@@ -20,19 +19,6 @@ addForm.addEventListener('submit', (e) =>{
     generateTemplate(todo);
     addForm.reset();
 });
-
-// delete todo
-
-// const confirm = document.querySelector('.confirm');
-// const confirmDelete = () =>{    
-//     confirm.addEventListener('click', (e) =>{        
-//         if(e.target.classList.contains('yes')){
-//             confirm.classList.add('hidden');
-//         } else if(e.target.classList.contains('no')){
-//             confirm.classList.add('hidden');
-//         } 
-//     });
-// };
 
 todoList.addEventListener('click', (e) =>{
 
